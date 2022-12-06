@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Space</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="astro.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <nav>
+            <div class="menu">
+                <p class="animated"><a href="https://www.nasa.gov/" target="_blank">Nasa</a></p>
+            </div>
+
+            <ul class="menu-desktop">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Galleries</a></li>
+                <li><a href="#">Missions</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <ul class="menu-mobile">
+                <div class="icon-close">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Galleries</a></li>
+                <li><a href="#">Missions</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="menu-icon">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </nav>
+
+        <section class="corpo">
+            <div class="texto">
+                <h1 class="frase1">Nossa paixão por aprender</h1>
+                <h2 class="frase2">é nossa ferramenta de sobreviência</h2>
+            </div>
+        </section>
+        <script>
+            let menuIcon = document.querySelector('.menu-icon');
+            let menuMobile = document.querySelector('.menu-mobile');
+            let iconClose = document.querySelector('.menu-mobile .icon-close');
+            
+            menuIcon.addEventListener('click',function(){
+                menuMobile.classList.add('ativo');
+            });
+
+            iconClose.addEventListener('click',function(){
+                menuMobile.classList.remove('ativo');
+            });
+
+        </script>
+    </body>
+</html>
